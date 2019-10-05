@@ -14,14 +14,14 @@
   ],
   "deploy": {
     "production": {
-      "key": "/home/lixy/.ssh/authorized_keys",
+      "keys": "~/.ssh/id_rsa.pub",
       "user": "lixy",
       "host": ["192.168.50.99"],
       "ref": "origin/master",
       "repo": "git@github.com:shayeLee/file-server.git",
-      "path": "/home/lixy/fileServer",
+      "path": "~/fileServer",
       "pre-deploy": "git fetch --all",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "post-deploy": "yarn install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
 }
