@@ -1,0 +1,27 @@
+{
+  "apps": [
+    {
+      "name": "app",
+      "script": "app.ts",
+      "watch": true,
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "key": "/home/lixy/.ssh/authorized_keys",
+      "user": "lixy",
+      "host": ["192.168.50.99"],
+      "ref": "origin/master",
+      "repo": "git@github.com:shayeLee/file-server.git",
+      "path": "/home/lixy/fileServer",
+      "pre-deploy": "git fetch --all",
+      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
