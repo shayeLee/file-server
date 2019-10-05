@@ -14,8 +14,8 @@ deploy:
     ref: origin/master      # 要拉取的git分支
     repo: git@github.com:shayeLee/file-server.git # 远程仓库地址
     ssh_options: StrictHostKeyChecking=no # SSH 公钥检查
-    path: /fileServer              # 拉取到服务器某个目录下
+    path: /fileServer       # 拉取到服务器某个目录下
     pre-deploy: git fetch --all # 部署前执行
-    post-deploy: cd current && yarn install && pm2 reload deploy.yaml --env production # 部署后执行
+    post-deploy: yarn install && pm2 reload deploy.yaml --env production # 部署后执行
     env:
       NODE_ENV: production
