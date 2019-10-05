@@ -20,7 +20,6 @@
       "ref": "origin/master",
       "repo": "git@github.com:shayeLee/file-server.git",
       "path": "~/fileServer",
-      "pre-deploy": "git fetch --all",
       "post-deploy": "yarn install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
