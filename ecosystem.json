@@ -2,10 +2,10 @@
   "apps": [
     {
       "name": "app",
-      "script": "/home/www/fileServer/currentgit/app.ts",
+      "script": "app.ts",
       "watch": true,
       "env": {
-        "NODE_ENV": "development"
+        "COMMON_VARIABLE": "true"
       },
       "env_production": {
         "NODE_ENV": "production"
