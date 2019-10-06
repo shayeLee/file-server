@@ -15,11 +15,11 @@
   "deploy": {
     "production": {
       "keys": "~/.ssh/id_rsa.pub",
-      "user": "root",
+      "user": "www",
       "host": ["192.168.50.99"],
       "ref": "origin/master",
       "repo": "git@github.com:shayeLee/file-server.git",
-      "path": "~/fileServer",
+      "path": "/home/www/fileServer",
       "post-deploy": "yarn install && pm2 startOrRestart ecosystem.json --env production"
     }
   }
