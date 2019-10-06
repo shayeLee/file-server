@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "app",
-      "script": "/home/www/fileServer/current/app.ts",
+      "script": "/home/www/fileServer/currentgit/app.ts",
       "watch": true,
       "env": {
         "NODE_ENV": "development"
