@@ -20,7 +20,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:shayeLee/file-server.git",
       "path": "/home/www/fileServer",
-      "post-deploy": "yarn install && pwd && pm2 startOrRestart ecosystem.json --env production",
+      "post-deploy": "yarn install && pwd && pm2 startOrRestart ecosystem.json --env current",
       "env"  : {
         "NODE_ENV": "production"
       }
