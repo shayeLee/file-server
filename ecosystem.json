@@ -5,7 +5,7 @@
       "script": "app.ts",
       "watch": true,
       "env": {
-        "COMMON_VARIABLE": "true"
+        "NODE_ENV": "production"
       },
       "env_production": {
         "NODE_ENV": "production"
@@ -20,7 +20,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:shayeLee/file-server.git",
       "path": "/home/www/fileServer",
-      "post-deploy": "yarn install && pwd && pm2 startOrRestart ecosystem.json --env current",
+      "post-deploy": "yarn install && pwd && pm2 startOrRestart ecosystem.json --env production",
       "env"  : {
         "NODE_ENV": "production"
       }
