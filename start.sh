@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pm2 startOrRestart ecosystem.json --env production
+pm2 reload app.ts
