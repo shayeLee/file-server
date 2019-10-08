@@ -1,6 +1,6 @@
 {
   "name": "node",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {

@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.33](https://github.com/shayeLee/file-server/compare/v1.0.32...v1.0.33) (2019-10-08)
+
 ### [1.0.32](https://github.com/shayeLee/file-server/compare/v1.0.31...v1.0.32) (2019-10-08)
 
 ### [1.0.31](https://github.com/shayeLee/file-server/compare/v1.0.30...v1.0.31) (2019-10-08)
