@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "app",
-      "cwd": "/home/www/fileServer",
+      "cwd": "/home/www/fileServer/current",
       "script": "./app.ts",
       "watch": true,
       "env": {
